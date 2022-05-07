@@ -1,0 +1,12 @@
+{
+	"name": "micro-frontend",
+	"version": "0.0.0",
+	"author": {
+		"name": "Ray"
+	},
+	"scripts": {
+		"start": "pnpm run start:master & pnpm run start:slaves",
+		"start:slaves": "pnpm --filter \"app*\" run start",
+		"start:master": "pnpm --filter \"root-app\" run start "
+	}
+}

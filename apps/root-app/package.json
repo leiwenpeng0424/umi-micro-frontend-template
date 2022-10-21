@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@ant-design/pro-layout": "^6.5.0",
+    "antd": "^4.23.6",
     "lodash": "^4.17.21",
     "path-to-regexp": "^6.2.1",
     "qiankun": "^2.7.0",

@@ -1,12 +1,11 @@
 {
-	"name": "micro-frontend",
-	"version": "0.0.0",
-	"author": {
-		"name": "Ray"
-	},
-	"scripts": {
-		"start": "pnpm run start:master & pnpm run start:slaves",
-		"start:slaves": "pnpm --filter \"app*\" run start",
-		"start:master": "pnpm --filter \"root-app\" run start "
-	}
+  "name": "micro-frontend",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "pnpm run start:master & pnpm run start:slaves",
+    "start:slaves": "pnpm --filter \"./apps/app*\" run start",
+    "start:master": "pnpm --filter \"./apps/root-app\" run start ",
+    "build": "pnpm --filter \"./apps/*\" run build"
+  }
 }

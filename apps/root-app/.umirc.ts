@@ -19,17 +19,14 @@ export default defineConfig({
   qiankun: {
     master: {
       apps: [
-        {
-          name: 'app1',
-          entry: '//localhost:8081',
-        },
+        { name: 'app1', entry: '//localhost:8001/app1' },
         {
           name: 'app2', // 唯一 id
-          entry: '//localhost:8082',
+          entry: '//localhost:8002/app2',
         },
         {
           name: 'app3', // 唯一 id
-          entry: '//localhost:8083',
+          entry: '//localhost:8003/app3',
         },
       ],
     },

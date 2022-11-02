@@ -22,8 +22,7 @@ export default defineConfig({
       },
       schema: 'https://172.31.2.114:31801/ummi-device/v2/api-docs',
       clientName: 'rms-web',
-      gen: require("../../libraries/openapi-generator")
+      gen: require('../../libraries/openapi-generator'),
     },
   ],
 });
-
